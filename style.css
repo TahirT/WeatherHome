@@ -1,0 +1,945 @@
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color:rgb(84, 151, 214);
+    background-image: url( Images/look-up-at-the-sky-day-1.webp);
+    border-image-repeat: stretch;
+    height: auto;
+    align-items: center;
+    
+}
+#getData {
+
+    
+    width: auto;
+    height: 40px;
+    padding: 5px;
+    border-radius: 20px;
+    border: 2px solid  rgb(51, 119, 119);
+    color: rgb(5, 97, 133);
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+
+}
+.mainBody div{
+    float: left;
+    display: block;
+    color: #020202e0;
+    text-align: center;
+    text-decoration: none;
+    border: 3px solid black;
+    width: 23.7%;
+    height: 150px;
+    background-color: rgba(37, 85, 158, 0.76);
+    font-size: 30px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    border-radius: 10px;
+    
+}
+#div1{
+    display: none;
+}
+#div2, #div3, #div4 {
+    display: none;
+    margin-left: 0.4%;
+}
+.mainBody{
+    margin-left: 4%;
+}
+
+
+header {
+    background-color: rgba(7, 46, 105, 0.781);
+    height: 20%;
+    text-align: center;
+    padding: 1%;
+    color: white;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 20px;
+}
+
+#searchData{
+
+    float: right;
+    width: 20%;
+   
+}
+
+#searchData :hover{
+
+background-color: rgb(51, 119, 119);
+color: white;
+cursor: pointer;
+animation-name: Fill;
+
+}
+.storage p{
+    float: left;
+    width: 30%;
+    height: 70px;
+    border: 3px solid rgb(0, 116, 131);
+    color: black;
+    font-size: 17px;
+    margin-left: 7%;
+    padding-left: 1%;
+    background-color: rgba(245, 245, 245, 0.637);
+}
+
+.storage {
+    float: left;
+    width: 57%;
+    margin-left: 5%;
+    height: 150px;
+}
+ul{
+    float: left;
+    width: 20%;
+}
+
+#demo {
+    
+    color: white;
+    width: auto;
+    font-size: 30px;
+    font-family: 'Times New Roman', Times, serif;
+    margin: 3% 0 0 5%;
+    text-decoration: none;
+    
+
+}
+#temp {
+    
+    color: white;
+    width: auto;
+    height:100px;
+    text-align: center;
+    font-size: 60px;
+    font-family: 'Times New Roman', Times, serif;
+    margin-top: 1%;
+    padding-top: 2px;
+    text-decoration: none;
+    
+}
+#figure {
+    text-align: center;
+    font-size: 20px;
+    position: relative;
+    top: -300px;
+    padding: auto;
+    height: 200px;
+    width: 200px;
+    float: right;
+    margin-right: 3%;   
+    border-radius: 10px;
+}
+#figure p{
+    position: relative;
+    top: -20%;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: rgb(54, 53, 53);
+    background-color: darkcyan;
+    margin-right: 5%;
+    opacity: 0.8;
+    border-bottom: 4px solid rgb(54, 54, 54);
+    border-left: 4px solid rgb(54, 54, 54);
+    border-radius: 5px;
+}
+#figure img {
+    height: 200px;
+    width: 200px;
+}
+div.locationData div{
+    float: left;
+}
+ 
+div.locationData {
+    position: relative;
+    top: -20px;
+    width: 90%;
+    border-left: 25px solid darkcyan;
+    background-color: rgb(46, 45, 45);
+    float: left;
+    margin-right: 5%;
+    margin-left: 5%;
+    opacity: 0.8;
+    box-shadow: rgb(8, 8, 8);
+}
+
+.menu {
+    
+    overflow: hidden;
+    background-color: #333;
+    opacity: 0.8;
+    border-bottom: 5px solid rgb(12, 12, 12);
+    border-top: 3px solid rgb(12, 12, 12);
+    
+        
+}
+.Top {
+    background-image: url( Images/look-up-at-the-sky-day-1.webp);
+    border-image-repeat: stretch;
+    height: auto;
+    align-items: center;
+    width: auto;
+}
+
+
+.menu a {
+    float: left;
+    color: #f2f2f2;
+    font-weight: bold;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    margin-right: 3px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    background-color: rgba(180, 180, 180, 0.534);}
+
+.menu a:hover {
+    background-color: #ddd; 
+    color: black;
+}
+
+.menu a.active {
+    background-color: darkcyan;
+    color: white;
+}
+.menu p{
+    width: 100%; 
+    height: 20px;
+    background-color: whitesmoke;
+    margin-top: 0%; 
+    margin-bottom: 5px;
+    border: 2px solid rgb(138, 136, 136);
+    font-size: medium;
+    font-weight: bold;
+    padding-left: 10px;
+    color: rgb(53, 52, 52);
+}
+#Search {
+    opacity: 0.8;
+    vertical-align: bottom;
+    align-self: center;
+    height: 50px;
+    width: 30%;
+    margin-top: 10px;
+    margin-left:38%;
+    margin-right:35%;
+    border-radius: 25px;
+}
+
+
+
+.leftColumn {
+    float: left;
+    width: 70%;
+    height: auto;
+    margin-left: 5%;
+    margin-bottom: 2%;
+}
+.leftColumn div{
+    background-color: rgb(0, 116, 161);
+    border-radius: 10px;
+    color: whitesmoke;
+    font-weight: 500;
+    
+    
+}
+.leftColumn div :hover{
+    cursor: pointer;
+    background-color: whitesmoke;
+    color: black;
+    transition: 0.4s;
+}
+.leftColumn .first div{
+    float: left;
+    width: 40%;
+    height: 33%;
+    margin-top: 5px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size: 20px;
+    border-top: 3px solid rgb(81, 131, 155);
+    margin-left: 3%;
+    padding-left: 7%;
+    padding-bottom: 1%;
+    
+}
+#data1 ,#data2 {
+    border:none;
+}
+.rightColumn{
+    float: left;
+    width: 20%;
+    margin-left: 10px;
+    height: 200px;
+}
+.rightColumn div{
+
+    height: 100%;
+
+}
+.layout 
+{
+float: left;
+width: 100%;
+}
+
+
+#timezone{
+    width:auto;
+    height: auto;
+    float: left;
+    margin-left: 5%;
+    margin-top: 15px;
+    padding: 5px;
+    font-size: 40px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: rgba(0, 0, 0, 0.781);
+    font-weight: bold;
+    background-image: linear-gradient(to bottom right, rgba(224, 222, 222, 0.829), rgba(117, 116, 116, 0.808));
+    border-top: 10px solid rgba(255, 255, 255, 0.774);
+    border-left: 10px solid rgba(167, 165, 165, 0.795);
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom: 3px solid black;
+    border-right: 3px solid rgba(0, 0, 0, 0.514);
+
+}
+#locationTime{
+
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-align: center;
+    color:rgb(2, 25, 39);
+    padding-top: 5%;
+    font-size: 25px;
+    border-radius: 10px;
+
+}
+
+#alertbox {
+    width: 90%;
+    display:none;
+    margin-left: 5%;
+    background-color: #ff9800;
+    padding: 1%;
+    color: white;
+    font-size: 17px;
+    opacity: 1;
+    transition: opacity 0.6s;
+    margin-bottom: 3%;
+    margin-top: 13%;
+    margin-right: 5%;
+    text-overflow: clip;
+}
+.closebtn {
+    margin-right: 2%;
+    margin-left: 1%;
+    color: white;
+    font-weight: bold;
+    float: left;
+    font-size: 22px;
+    line-height: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  .closebtn:hover {
+    color: black;
+  }
+#searchCity {
+    position: relative;
+    top: -50px;
+    
+}
+#searchCity p {
+
+    font-size: 20px;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-transform: uppercase;
+    background-color: rgba(0, 139, 139, 0.788);
+    text-align: center;
+    margin-right: auto;
+    width: 15%; 
+    height: 25px;
+    margin-left: 45%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  
+}
+
+  .lastSearch{
+      position: relative;
+      top: -60px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    width: auto;
+    font-size: 20px;
+    color: rgb(0, 0, 0);
+    margin-right: 2%;
+
+}
+  .lastSearched{
+    margin: 10px;
+    padding-left: 1%;
+    padding-right: 1%;
+    width: auto;
+    font-size: 20px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    background-color: rgb(226, 167, 40);
+    border: 3px solid orange;
+    color: white;
+    border-radius: 10px;
+    margin-right: 5%;
+    margin-left: 5%;
+    text-align: center;
+  }
+.lastSearched:hover {
+    cursor: pointer;
+    background-color: rgb(89, 192, 20);
+    border: 3px solid black;
+
+}
+#closestCity p{
+    width: auto;
+}
+#closestCity{
+    text-align:center;
+    float: left;
+    width: 91%;
+    height: auto;
+    border-bottom: 5px solid rgb(0, 0, 0, 0.671);
+    background-color: rgb(56, 202, 76, 0.63);
+    margin-bottom: 1%;
+    margin-left: 5%;
+    margin-right: 5%;
+    font-size: 20px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+input[type="email"]{
+    margin-top: 10px;
+    color: whitesmoke;
+    margin-right: 5px;
+    width: 30%;
+    height: 25px;
+    background-color: black;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    text-align: center;
+}
+#go {
+    background-color: darkcyan;
+    border:3px solid black;
+    border-radius: 20px;
+    height: 28px;
+}
+#go:hover{
+    cursor: pointer;
+    background-color: darkslategrey;
+}
+#guest{
+    background-color: #000000a8;
+    height: 27px;
+    border: none;
+    border-radius: 2px;
+    color: rgb(255, 255, 255);
+    font-family: sans-serif;
+    font-weight: 500;
+    transition: 0.2s ease;
+    cursor: pointer;
+    border: 3px solid rgb(99, 98, 98);
+    border-radius: 10px;
+
+}
+#guest:hover {
+    background-color: #2423238e ;
+}
+#signEmail{
+    text-align: center;
+    color: rgb(245, 245, 245, 0.836);
+    margin-right: 1%;
+    width: auto;
+}
+#delete{
+    border-radius: 5px;
+    margin-left: 1%;
+    width: 10%;
+    font-size: 15px;
+    font-weight: bold;
+    color: rgb(5, 5, 5);
+    background-color: rgba(190, 190, 190, 0.705);
+    border-bottom: 4px double whitesmoke;
+}
+#delete:hover{
+    cursor: pointer;
+    color: whitesmoke;
+    background-color: rgb(0, 0, 0, 0.548);
+    border-bottom: 3px double whitesmoke;
+}
+
+.modal{
+width: auto;
+height: auto;
+}
+.modal-content{
+    height: 300px;
+}
+#myModal {
+    float: left;
+    display: none;
+    position: fixed; 
+    z-index: 1; 
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 16.6%;
+    overflow: auto; 
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0,0.4);
+  }
+  #myModal1 {
+    float: left;
+    display: none;
+    position: fixed; 
+    z-index: 1; 
+    padding-top: 100px;
+    left: 16.6%;
+    top: 0;
+    width: 16.6%;
+    overflow: auto; 
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0,0.4);
+  }
+  #myModal2 {
+    float: left;
+    display: none;
+    position: fixed; 
+    z-index: 1; 
+    padding-top: 100px;
+    left: 33.2%;
+    top: 0;
+    width: 16.6%;
+    overflow: auto; 
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0,0.4);
+  }
+  #myModal3 {
+    float: left;
+    display: none;
+    position: fixed; 
+    z-index: 1; 
+    padding-top: 100px;
+    left: 49.8%;
+    top: 0;
+    width: 16.6%;
+    overflow: auto; 
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0,0.4);
+  }
+  #myModal4 {
+    float: left;
+    display: none;
+    position: fixed; 
+    z-index: 1; 
+    padding-top: 100px;
+    left: 66.4%;
+    top: 0;
+    width: 16.6%;
+    overflow: auto; 
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0,0.4);
+  }
+  #myModal5 {
+    float: left;
+    display: none;
+    position: fixed; 
+    z-index: 1; 
+    padding-top: 100px;
+    left: 83%;
+    top: 0;
+    width: 16.6%;
+    overflow: auto; 
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0,0.4);
+  }
+  #myModal6 {
+    float: left;
+    display: none;
+    position: fixed; 
+    z-index: 1; 
+    padding-top: 100px;
+    left: 83%;
+    top: 0;
+    width: 16.6%;
+    
+    overflow: auto; 
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0,0.4);
+  }
+  #myModal7 {
+    float: left;
+    display: none;
+    position: fixed; 
+    z-index: 1; 
+    padding-top: 100px;
+    left: 83%;
+    top: 0;
+    width: 16.6%;
+    
+    overflow: auto; 
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0,0.4);
+  }
+  
+  
+  .modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+  }
+  
+  .close ,.close1 ,.close2 ,.close3 ,.close4 ,.close5 ,.close6 ,.close7{
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close ,.close1 ,.close2 ,.close3 ,.close4 ,.close5 ,.close6 ,.close7:hover, .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  #clock{
+     
+      width: 30%;
+      margin-left: 4%;
+      margin-top: 0.4%;
+     
+      border-radius: 10px;
+  }
+
+  #clock h2 {
+    width: auto;
+    display: block;
+    color: #fff;
+    margin: 10px 0;
+    font-weight: 700;
+    font-size: 2em;
+  }
+  
+  #clock #time {
+    display: flex;
+  }
+  
+  #clock #time div {
+    position: relative;
+    margin: 0 5px;
+    -webkit-box-reflect: below 1px linear-gradient(transparent, rgba(218, 216, 216, 0.267));
+  }
+  
+  #clock #time div span {
+    position: relative;
+    display: block;
+    width: 90px;
+    height: 70px;
+    background: #2196f3;
+    color: #fff;
+    font-weight: 300;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3em;
+    z-index: 10;
+
+  }
+  
+  #clock #time div span:nth-child(2) {
+    height: 30px;
+    font-size: 0.7em;
+    letter-spacing: 0.2em;
+    font-weight: 500;
+    z-index: 9;
+    box-shadow: none;
+    background: #127fd6;
+    text-transform: uppercase;
+  }
+  
+  #clock #time div:nth-last-child(2) span {
+    background: #ff006a;
+  }
+  
+  #clock #time div:nth-last-child(2) span:nth-child(2) {
+    background: #ec0062;
+  }
+  
+  #clock #time div:nth-last-child(1) span {
+    position: absolute;
+    bottom: 0;
+    width: 40px;
+    height: 30px;
+    font-size: 1.5em;
+    background: #fff;
+    color: #000;
+    -webkit-box-reflect: below 1px linear-gradient(transparent, #0004);
+  }
+ 
+  /* #weatherType{
+      width: auto;
+      height: auto;
+    float:right; 
+    position: relative; 
+    z-index: 1; 
+    top: -100px;
+    margin-right: 5%;
+    background-color: black;
+    color: whitesmoke;
+  } */
+  #innertext{
+      font-size: 33px;
+      font-weight: bold;
+      font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  }
+  #innertext1{
+    font-size: 30px;
+    font-weight: bold;
+    color:rgb(255, 255, 255);
+    text-align: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+#innertext2{
+    font-size: 20px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+#innertext3{
+    font-size: 30px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-align: center;
+}
+#innertext4{
+    font-size: 30px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+}
+#innertext5{
+    color: whitesmoke;
+    font-size: 30px;
+    text-align: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+#innertext6{
+    font-size: 30px;
+}
+#innertext7{
+    font-size: 30px;
+    font-weight: bold;
+}
+#modalc1 {
+    background-image: url(Images/hotCold.jpg) ;
+    background-size: cover; 
+    border-radius: 20px;
+
+
+}
+#modalc2 {
+    background-image: url(Images/world.jpg) ;
+    background-size: cover;
+    background-position: center; 
+    color: whitesmoke;
+    border-radius: 20px;
+
+    
+    
+}
+#modalc3 {
+    background-image: linear-gradient(to bottom , red, darkcyan,white);
+    background-size: cover;
+    border-radius: 20px;
+    
+}
+#modalc4 {
+    background-image: url(Images/humidity.jpg) ;
+    background-size: cover; 
+    border-radius: 20px;
+
+    
+}
+#modalc5 {
+    background-image: url(Images/airPressure.jpg);
+    background-position: center;
+    background-size: cover; 
+    border-radius: 20px;
+
+    
+}
+#modalc6 {
+    background-image: url(Images/visibility.jpg) ;
+    background-size: cover; 
+    background-position: center;
+    border-radius: 20px;
+
+    
+}
+#modalc7 {
+    background-image: url(Images/wind.jpg) ;
+    background-size: cover; 
+    border-radius: 20px;
+
+    
+}
+#modalc8 {
+    background-image: url(Images/hotCold.jpg) ;
+    background-size: cover; 
+    border-radius: 20px;
+
+    
+}
+
+
+@media screen and (max-width:600px) {
+    .mainBody div{
+      width: 100%;
+    }
+  }
+  @media screen and (max-width:600px) {
+      .locationData{
+          margin-right: 5%;
+          width: 50%;
+          margin-top: 15%;
+      }
+    #figure img {
+
+        height: 100px;
+        width: 100px;
+    }
+    div #figure{
+
+        height: 100px;
+        width: 100px;
+        position: relative;
+        top: 5px;
+    }
+    .leftColumn {
+        width: 90%;
+        margin-left: 5%;
+        height: auto;
+       
+    }
+    .rightColumn{
+        width: 90%;
+        margin-left: 5%;
+        margin-right: 2%;
+        height: auto;
+    }
+    #div4{
+        width: 100%;
+        margin-left: 0%;
+        
+    }
+    #getData {
+
+        width: auto;
+    }
+    .mainBody{
+        margin-right: 5%;
+    }
+    #figure p{
+        font-size: 15px;
+    }
+    #timezone {
+        font-size: 30px;
+    }
+    /* #searchData{
+        
+    } */
+    #alertbox {
+        margin-top: 20%;
+    }
+
+.storage p{
+    width: 40%;
+    margin-bottom: 10%;
+}
+#getData{
+    position: relative;
+    left: -20px;
+    
+}
+#about {
+    float: right;
+    margin-right: 9%;
+}
+#delete{
+    position: relative;
+    width: auto;
+    margin-right: 70%;
+}
+#email{
+    width: auto;
+}
+ul{
+    width: auto;
+}
+li {
+    
+    width: auto;
+}
+.lastSearched{
+    padding: 5px;
+    width: auto;
+}
+ #about{
+    display: none;
+}
+#clock h2 {
+    width: 200px;
+    height: auto;
+}
+#myModal{
+ width: 100%;
+ left: 0;
+}
+#myModal1{
+    width: 100%;
+    left: 0;
+}
+#myModal2{
+    width: 100%;
+    left: 0;
+   }
+   #myModal3{
+    width: 100%;
+    left: 0;
+   }
+   #myModal4{
+    width: 100%;
+    left: 0;
+   }
+   #myModal5{
+    width: 100%;
+    left: 0;
+   }
+   #myModal6{
+    width: 100%;
+    left: 0;
+   }
+   #myModal7{
+    width: 100%;
+    left: 0;
+   }
+   #searchCity p{
+       width: auto;
+       margin-left: 10%;
+       margin-top: 15%;
+       margin-bottom: 3%;
+   }
+   div.lastSearch{
+       margin-top: 6%;
+   }
+
+}  
